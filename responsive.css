@@ -1,0 +1,21 @@
+/* Responsive breakpoints */
+@media (max-width:768px){
+  .hamburger{display:flex}
+  .nav-menu{position:fixed;left:-100%;top:70px;flex-direction:column;background:var(--darker-bg);width:100%;text-align:center;transition:.3s;box-shadow:0 10px 27px rgba(0,0,0,.05);padding:2rem 0}
+  .nav-menu.active{left:0}
+  .hero-content{grid-template-columns:1fr;text-align:center}
+  .hero-title{font-size:2.5rem}
+  .content-grid{grid-template-columns:1fr}
+  .comparison-grid{grid-template-columns:1fr;text-align:center}
+  .vs-divider{margin:2rem auto}
+  .atmosphere-container{grid-template-columns:1fr}
+  .forecast-process{flex-direction:column}
+  .process-arrow{transform:rotate(90deg)}
+  .section-title{font-size:2rem}
+}
+@media (max-width:480px){
+  .hero-title{font-size:2rem}
+  .hero-subtitle{font-size:1.2rem}
+  .section-title{font-size:1.8rem}
+  .cards-grid,.climate-grid,.phenomena-grid,.curiosities-container{grid-template-columns:1fr}
+}

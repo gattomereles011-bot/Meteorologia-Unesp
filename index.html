@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorologia com Mereles - Jovem Pesquisador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Meteorologia Mereles</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#intro" class="nav-link">Introdução</a></li>
+                <li><a href="#clima-tempo" class="nav-link">Clima vs Tempo</a></li>
+                <li><a href="#elementos" class="nav-link">Elementos</a></li>
+                <li><a href="#fatores" class="nav-link">Fatores</a></li>
+                <li><a href="#tipos-clima" class="nav-link">Tipos de Clima</a></li>
+                <li><a href="#fenomenos" class="nav-link">Fenômenos</a></li>
+                <li><a href="#atmosfera" class="nav-link">Atmosfera</a></li>
+                <li><a href="#previsao" class="nav-link">Previsão</a></li>
+                <li><a href="#mudancas" class="nav-link">Mudanças</a></li>
+                <li><a href="#curiosidades" class="nav-link">Curiosidades</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Oi, eu sou o Mereles!</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Tenho 14 anos e sou completamente fascinado por meteorologia!</p>
+            <p class="hero-description animate-fade-in-delay-2">
+                Desde pequeno, fico hipnotizado olhando pro céu, tentando entender como as nuvens se formam e por que o tempo muda. 
+                Neste site, quero compartilhar com vocês tudo que descobri sobre esse mundo incrível!
+            </p>
+            <a href="#intro" class="cta-button animate-fade-in-delay-3">
+                <span>Começar Jornada</span>
+                <i class="fas fa-rocket"></i>
+            </a>
+        </div>
+        <div class="hero-image animate-float">
+            <div class="hero-illustration" aria-hidden="true" style="width:100%;height:260px;display:flex;align-items:center;justify-content:center;border-radius:20px;background:linear-gradient(135deg,rgba(0,212,170,0.06),rgba(0,102,204,0.06));">
+                <i class="fas fa-cloud-sun" style="font-size:64px;color:var(--turquoise);opacity:.9"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-book-open section-icon"></i>
+                <h2 class="section-title">Introdução à Meteorologia</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>
+                        Sabe quando você olha pro céu e vê aquelas nuvens diferentes, ou quando de repente começa a chover? 
+                        Isso é meteorologia! É a ciência que estuda o tempo e o clima.
+                    </p>
+                    <p>
+                        Eu comecei a me interessar por isso quando tinha uns 10 anos. Minha mãe sempre falava: 
+                        "Mereles, você parece um velho do tempo!" Kkk! Mas é sério, é muito legal entender 
+                        como a natureza funciona!
+                    </p>
+                    <div class="highlight-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h4>Curiosidade que me deixou louco:</h4>
+                            <p>Um raio pode ter até 30.000°C - mais quente que a superfície do Sol! 🤯</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate vs Weather Section -->
+    <section id="clima-tempo" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-exchange-alt section-icon"></i>
+                <h2 class="section-title">Diferença entre Clima e Tempo</h2>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Tempo</h3>
+                    <p>É o estado do tempo em um lugar específico em um momento curto. Como agora!</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Muda rápido</li>
+                        <li><i class="fas fa-check"></i> Horas ou dias</li>
+                        <li><i class="fas fa-check"></i> Chuva agora, sol depois</li>
+                    </ul>
+                </div>
+                <div class="vs-divider">
+                    <span>VS</span>
+                </div>
+                <div class="comparison-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Clima</h3>
+                    <p>É o padrão do tempo por muitos anos. Tipo a personalidade do lugar!</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Muda devagar</li>
+                        <li><i class="fas fa-check"></i> Anos ou séculos</li>
+                        <li><i class="fas fa-check"></i> Tropical, seco, etc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="example-box">
+                <h4>Exemplo que eu uso pra lembrar:</h4>
+                <p><strong>Tempo:</strong> "Hoje tá frio e chuvoso"</p>
+                <p><strong>Clima:</strong> "O Brasil tem clima predominantemente tropical"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Elements Section -->
+    <section id="elementos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-thermometer-half section-icon"></i>
+                <h2 class="section-title">Elementos Climáticos</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-temperature-high"></i>
+                        <h3>Temperatura</h3>
+                    </div>
+                    <p>Quanto mais quente, mais as moléculas se agitam! É tipo uma festa das partículas!</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em °C</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-tint"></i>
+                        <h3>Umidade</h3>
+                    </div>
+                    <p>Quanto de vapor d'água tem no ar. Quando tá alta, seu cabelo fica armado! Kkk</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em %</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Ventos</h3>
+                    </div>
+                    <p>O ar correndo de um lugar pra outro. É tipo o planeta respirando!</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em km/h</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Precipitação</h3>
+                    </div>
+                    <p>Água caindo do céu - chuva, neve, granizo. Presente dos céus!</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em mm</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-sun"></i>
+                        <h3>Radiação Solar</h3>
+                    </div>
+                    <p>Energia que vem do Sol. Sem ela, não existiria vida na Terra!</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em W/m²</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <h3>Pressão Atmosférica</h3>
+                    </div>
+                    <p>Peso do ar em cima da gente. Quando muda, pode vir tempestade!</p>
+                    <div class="card-footer">
+                        <span class="badge">Mede em hPa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrumentos Meteorológicos Section -->
+    <section id="instrumentos" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-tools section-icon"></i>
+                <h2 class="section-title">Instrumentos Meteorológicos</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Termômetro</h3>
+                    </div>
+                    <p>Mede a temperatura do ar em graus Celsius (°C).</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-compress"></i>
+                        <h3>Barômetro</h3>
+                    </div>
+                    <p>Mede a pressão atmosférica em hPa (hectopascais); útil pra detectar frentes e tempestades.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-tint"></i>
+                        <h3>Higrômetro</h3>
+                    </div>
+                    <p>Indica a umidade relativa do ar em porcentagem (%).</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Anemômetro</h3>
+                    </div>
+                    <p>Mede a velocidade do vento (km/h ou m/s); às vezes vem com biruta pra direção.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <h3>Pluviômetro</h3>
+                    </div>
+                    <p>Registra a quantidade de precipitação (mm) — serve pra medir chuva.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-sun"></i>
+                        <h3>Piranômetro (Pyranometer)</h3>
+                    </div>
+                    <p>Mede a radiação solar global que chega à superfície, importante pra energia solar.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <h3>Rádio-sonda / Balão Meteorológico</h3>
+                    </div>
+                    <p>Balões com sensores que sobem e transmitem dados de pressão, temperatura e umidade em altitude.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-satellite-dish"></i>
+                        <h3>Radar Meteorológico (Doppler)</h3>
+                    </div>
+                    <p>Detecta chuva, intensidade e movimento das gotas; o Doppler também mede velocidade dos ventos nas nuvens.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-satellite"></i>
+                        <h3>Sensores e Satélites Meteorológicos</h3>
+                    </div>
+                    <p>Satélites observam nuvens, temperatura da superfície e padrões grandes do clima.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-ruler-vertical"></i>
+                        <h3>Ceilômetro</h3>
+                    </div>
+                    <p>Usado para medir a altura da base das nuvens e a presença de aerossóis no ar.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-home"></i>
+                        <h3>Estação Meteorológica</h3>
+                    </div>
+                    <p>Conjunto automático que reúne termômetro, pluviômetro, anemômetro, higrômetro e barômetro.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Sensores GNSS / GPS</h3>
+                    </div>
+                    <p>Detectam variações na atmosfera (vapor d'água) que ajudam em previsões e modelos.</p>
+                </div>
+            </div>
+            <div class="example-box" style="margin-top:2rem">
+                <h4>Como eu aprendi</h4>
+                <p>Eu vi alguém montar um pluviômetro bem na minha frente e aprendi tudo isso na palestra da Unesp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Factors Section -->
+    <section id="fatores" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-cogs section-icon"></i>
+                <h2 class="section-title">Fatores Climáticos</h2>
+            </div>
+            <div class="factors-container">
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Latitude</h3>
+                        <p>Quanto mais perto do Equador, mais quente. Por isso o Polo Norte é gelado!</p>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Altitude</h3>
+                        <p>Quanto mais alto, mais frio. Por isso tem neve no topo das montanhas!</p>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Massas de Ar</h3>
+                        <p>Grandes bolos de ar com temperaturas diferentes. Quando se encontram, fazem bagunça!</p>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Oceanos</h3>
+                        <p>Regulam a temperatura. Por isso cidades litorâneas tem clima mais ameno!</p>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Correntes Marinhas</h3>
+                        <p>Rios dentro do mar! A corrente do Golfo aquece a Europa.</p>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="factor-content">
+                        <h3>Relevo</h3>
+                        <p>Montanhas bloqueiam ventos e nuvens. Fazem chover mais de um lado só!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Types Section -->
+    <section id="tipos-clima" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-globe-americas section-icon"></i>
+                <h2 class="section-title">Tipos de Clima</h2>
+            </div>
+            <div class="climate-tabs">
+                <button class="tab-button active" data-tab="brasil">Brasil</button>
+                <button class="tab-button" data-tab="mundo">Mundo</button>
+            </div>
+            <div id="brasil" class="tab-content active">
+                <div class="climate-grid">
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Equatorial</h3>
+                            <p>Amazônica - chove muito, sempre quente e úmido!</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 24-26°C</span>
+                                <span><i class="fas fa-tint"></i> >2500mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Tropical</h3>
+                            <p>Centro-Oeste - verão chuvoso, inverno seco</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 20-26°C</span>
+                                <span><i class="fas fa-tint"></i> 1000-2000mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Semiárido</h3>
+                            <p>Sertão nordestino - quente e seco, sofre seca</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 25-27°C</span>
+                                <span><i class="fas fa-tint"></i> 500-800mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Subtropical</h3>
+                            <p>Sul do Brasil - faz frio no inverno!</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 12-22°C</span>
+                                <span><i class="fas fa-tint"></i> 1200-2000mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mundo" class="tab-content">
+                <div class="climate-grid">
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Desértico</h3>
+                            <p>Saara - super seco, dia quente, noite fria</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 30-50°C</span>
+                                <span><i class="fas fa-tint"></i> <250mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Mediterrâneo</h3>
+                            <p>Itália, Grécia - verão seco, inverno chuvoso</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                                <span><i class="fas fa-tint"></i> 400-900mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Polar</h3>
+                            <p>Antártida - sempre frio, neve eterna</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> -10 a -60°C</span>
+                                <span><i class="fas fa-tint"></i> <200mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="climate-card">
+                        <div class="climate-info">
+                            <h3>Temperado</h3>
+                            <p>Europa/USA - quatro estações bem definidas</p>
+                            <div class="climate-stats">
+                                <span><i class="fas fa-thermometer-half"></i> -5 a 25°C</span>
+                                <span><i class="fas fa-tint"></i> 500-1500mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Phenomena Section -->
+    <section id="fenomenos" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-bolt section-icon"></i>
+                <h2 class="section-title">Fenômenos Meteorológicos</h2>
+            </div>
+            <div class="phenomena-grid">
+                <div class="phenomenon-card">
+                    <div class="phenomenon-header">
+                        <i class="fas fa-tornado"></i>
+                        <h3>Tornado</h3>
+                    </div>
+                    <p>Um funil de vento super rápido! Pode chegar a 500 km/h - mais rápido que um avião!</p>
+                    <div class="phenomenon-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Curiosidade: O mais forte foi em Oklahoma, 1999</span>
+                    </div>
+                </div>
+                <div class="phenomenon-card">
+                    <div class="phenomenon-header">
+                        <i class="fas fa-hurricane"></i>
+                        <h3>Furacão</h3>
+                    </div>
+                    <p>Tempestade gigante que gira! Tem um olho no meio onde tá tudo calmo!</p>
+                    <div class="phenomenon-fact">
+                        <i class="fas fa-star"></i>
+                        <span>No Oceano Índico chamam de ciclone!</span>
+                    </div>
+                </div>
+                <div class="phenomenon-card">
+                    <div class="phenomenon-header">
+                        <i class="fas fa-cloud-rain"></i>
+                        <h3>El Niño</h3>
+                    </div>
+                    <p>Água do Pacífico esquenta mais que o normal. Bagunça o clima inteiro!</p>
+                    <div class="phenomenon-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Acontece a cada 2-7 anos</span>
+                    </div>
+                </div>
+                <div class="phenomenon-card">
+                    <div class="phenomenon-header">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>La Niña</h3>
+                    </div>
+                    <p>O contrário do El Niño - a água esfria mais. Também muda tudo!</p>
+                    <div class="phenomenon-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Costuma trazer mais chuvas pro Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atmosphere Layers Section -->
+    <section id="atmosfera" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-layer-group section-icon"></i>
+                <h2 class="section-title">Camadas da Atmosfera</h2>
+            </div>
+            <div class="atmosphere-container">
+                <div class="atmosphere-layers">
+                    <div class="layer" data-layer="troposfera">
+                        <div class="layer-info">
+                            <h3>Troposfera</h3>
+                            <p>0 a 12 km - Onde vivemos e onde acontece o tempo!</p>
+                        </div>
+                    </div>
+                    <div class="layer" data-layer="estratosfera">
+                        <div class="layer-info">
+                            <h3>Estratosfera</h3>
+                            <p>12 a 50 km - Tem a camada de ozônio que nos protege!</p>
+                        </div>
+                    </div>
+                    <div class="layer" data-layer="mesosfera">
+                        <div class="layer-info">
+                            <h3>Mesosfera</h3>
+                            <p>50 a 85 km - Onde os meteoros queimam!</p>
+                        </div>
+                    </div>
+                    <div class="layer" data-layer="termosfera">
+                        <div class="layer-info">
+                            <h3>Termosfera</h3>
+                            <p>85 a 600 km - Muito quente! As auroras acontecem aqui</p>
+                        </div>
+                    </div>
+                    <div class="layer" data-layer="exosfera">
+                        <div class="layer-info">
+                            <h3>Exosfera</h3>
+                            <p>600+ km - Onde terminam os satélites!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="atmosphere-details">
+                    <div class="detail-card active" id="troposfera-detail">
+                        <h4>Troposfera</h4>
+                        <p>É nossa casa! Aqui ficam as nuvens, as chuvas, os ventos... tudo que a gente chama de tempo. 
+                           Quanto mais alto, mais frio fica. Por isso tem neve no topo das montanhas!</p>
+                        <div class="detail-stats">
+                            <span><i class="fas fa-ruler-vertical"></i> Altitude: 0-12 km</span>
+                            <span><i class="fas fa-thermometer-half"></i> Temperatura: 15°C a -60°C</span>
+                        </div>
+                    </div>
+                    <div class="detail-card" id="estratosfera-detail">
+                        <h4>Estratosfera</h4>
+                        <p>Aqui fica a camada de ozônio, nosso super-herói invisível que bloqueia os raios UV nocivos do Sol! 
+                           Aviões de passageiros voam na parte de baixo aqui.</p>
+                        <div class="detail-stats">
+                            <span><i class="fas fa-ruler-vertical"></i> Altitude: 12-50 km</span>
+                            <span><i class="fas fa-thermometer-half"></i> Temperatura: -60°C a 0°C</span>
+                        </div>
+                    </div>
+                    <div class="detail-card" id="mesosfera-detail">
+                        <h4>Mesosfera</h4>
+                        <p>Aqui é onde os meteoros queimam quando entram na Terra, fazendo aquelas estrelinhas cadentes! 
+                           É a camada mais fria da atmosfera.</p>
+                        <div class="detail-stats">
+                            <span><i class="fas fa-ruler-vertical"></i> Altitude: 50-85 km</span>
+                            <span><i class="fas fa-thermometer-half"></i> Temperatura: -90°C</span>
+                        </div>
+                    </div>
+                    <div class="detail-card" id="termosfera-detail">
+                        <h4>Termosfera</h4>
+                        <p>Fica MUITO quente aqui! As lindas auroras boreais acontecem nessa camada. 
+                           A Estação Espacial Internacional orbita aqui!</p>
+                        <div class="detail-stats">
+                            <span><i class="fas fa-ruler-vertical"></i> Altitude: 85-600 km</span>
+                            <span><i class="fas fa-thermometer-half"></i> Temperatura: 500°C a 2000°C</span>
+                        </div>
+                    </div>
+                    <div class="detail-card" id="exosfera-detail">
+                        <h4>Exosfera</h4>
+                        <p>A última camada antes do espaço! Aqui o ar é tão rarefeito que as moléculas podem escapar pro espaço. 
+                           É onde morrem os satélites!</p>
+                        <div class="detail-stats">
+                            <span><i class="fas fa-ruler-vertical"></i> Altitude: 600+ km</span>
+                            <span><i class="fas fa-thermometer-half"></i> Temperatura: Varia muito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Forecast Section -->
+    <section id="previsao" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-satellite section-icon"></i>
+                <h2 class="section-title">Como é feita a Previsão do Tempo</h2>
+            </div>
+            <div class="forecast-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Coleta de Dados</h3>
+                    <p>Satélites, estações meteorológicas, balões e até aviões coletam dados o tempo todo!</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Supercomputadores</h3>
+                    <p>Computadores gigantes processam bilhões de informações em segundos!</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Modelos Matemáticos</h3>
+                    <p>Cientistas criam equações que imitam o comportamento do tempo!</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise e Previsão</h3>
+                    <p>Meteorologistas interpretam tudo e fazem a previsão!</p>
+                    <div class="accuracy-badge">
+                        <i class="fas fa-bullseye"></i>
+                        <span>Até 90% de acerto em 3 dias!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-showcase">
+                <div class="tech-card">
+                    <i class="fas fa-satellite"></i>
+                    <h4>Satélites GOES-16</h4>
+                    <p>Tiram fotos da Terra a cada 10 minutos!</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-radar"></i>
+                    <h4>Radares Meteorológicos</h4>
+                    <p>Enxergam dentro das nuvens!</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Inteligência Artificial</h4>
+                    <p>Agora os computadores aprendem sozinhos!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Change Section -->
+    <section id="mudancas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-leaf section-icon"></i>
+                <h2 class="section-title">Mudanças Climáticas e Sustentabilidade</h2>
+            </div>
+            <div class="climate-change-content">
+                <div class="problem-section">
+                    <h3>O Problema</h3>
+                    <div class="problem-cards">
+                        <div class="problem-card">
+                            <i class="fas fa-temperature-high"></i>
+                            <h4>Aquecimento Global</h4>
+                            <p>A Terra já esquentou 1.1°C desde 1880!</p>
+                        </div>
+                        <div class="problem-card">
+                            <i class="fas fa-ice-cream"></i>
+                            <h4>Derretimento das Geleiras</h4>
+                            <p>O Polo Norte perdeu 75% do gelo em 40 anos!</p>
+                        </div>
+                        <div class="problem-card">
+                            <i class="fas fa-fire"></i>
+                            <h4>Eventos Extremos</h4>
+                            <p>Mais furacões, secas e enchentes!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-section">
+                    <h3>O que podemos fazer</h3>
+                    <div class="solution-grid">
+                        <div class="solution-item">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Reciclar</h4>
+                            <p>Reutilizar materiais economiza energia!</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-bicycle"></i>
+                            <h4>Transporte Limpo</h4>
+                            <p>Andar de bike ou ônibus ajuda muito!</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-solar-panel"></i>
+                            <h4>Energia Limpa</h4>
+                            <p>Solar e eólica são as do futuro!</p>
+                        </div>
+                        <div class="solution-item">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Plantar Árvores</h4>
+                            <p>Uma árvore absorve 1 tonelada de CO2!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-message">
+                <i class="fas fa-heart"></i>
+                <p>
+                    Eu sei que parece assustante, mas ainda dá tempo de mudar! Cada ação nossa importa. 
+                    Comecei a separar o lixo em casa e andar mais de bike. Se cada um fizer sua parte, 
+                    conseguimos deixar um planeta melhor pra nossa geração!
+                </p>
+                <span>- Mereles, 14 anos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosities Section -->
+    <section id="curiosidades" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-lightbulb section-icon"></i>
+                <h2 class="section-title">Curiosidades e Inovações Tecnológicas</h2>
+            </div>
+            <div class="curiosities-container">
+                <div class="curiosity-card">
+                    <div class="curiosity-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Raio</h3>
+                    </div>
+                    <p>Tem até 30.000°C - 5x mais quente que a superfície do Sol!</p>
+                    <div class="curiosity-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Um raio pode ter 100 milhões de volts!</span>
+                    </div>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-header">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>Neve</h3>
+                    </div>
+                    <p>Cada floco tem formato único - como nossa digital!</p>
+                    <div class="curiosity-fact">
+                        <i class="fas fa-star"></i>
+                        <span>1 bilhão de flocos caem por segundo!</span>
+                    </div>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Nuvem</h3>
+                    </div>
+                    <p>Parece fofinha, mas pesa toneladas! Como flutua?</p>
+                    <div class="curiosity-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Uma nuvem de 1 km³ pesa 500 toneladas!</span>
+                    </div>
+                </div>
+                <div class="curiosity-card">
+                    <div class="curiosity-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Vento</h3>
+                    </div>
+                    <p>O mais rápido registrado foi 408 km/h no furacão Patricia!</p>
+                    <div class="curiosity-fact">
+                        <i class="fas fa-star"></i>
+                        <span>Vento solar chega a 800 km/s!</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="innovations-section">
+                <h3>Inovações Incríveis</h3>
+                <div class="innovations-grid">
+                    <div class="innovation-item">
+                        <i class="fas fa-drone"></i>
+                        <h4>Drones Meteorológicos</h4>
+                        <p>Voam dentro de furacões pra coletar dados!</p>
+                    </div>
+                    <div class="innovation-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>Reconhecimento de padrões com IA</h4>
+                        <p>Algoritmos detectam tempestades e padrões antes mesmo da gente perceber.</p>
+                    </div>
+                    <div class="innovation-item">
+                        <i class="fas fa-robot"></i>
+                        <h4>Modelos Automatizados</h4>
+                        <p>Computadores ajudam os meteorologistas a analisar milhões de dados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
